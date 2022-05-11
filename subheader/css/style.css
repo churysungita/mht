@@ -77,8 +77,8 @@
 }
 
 .form-inline {
-    display: block;
-    margin-bottom: auto;
+    display: inline-block;
+    margin-bottom: 2px;
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
