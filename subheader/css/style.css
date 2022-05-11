@@ -17,7 +17,7 @@
 
 @media (max-width: 991.98px) {
     .site-navbar {
-        padding-top: 3rem;
+        padding-top: 1rem;
         padding-bottom: 3rem;
     }
 }
@@ -30,7 +30,7 @@
 .site-navbar .site-logo {
     position: absolute;
     line-height: 0;
-    margin: 10px;
+    margin: 15px;
     padding: 0;
     z-index: 3;
 }
@@ -68,10 +68,12 @@
     border-spacing: 1px;
 }
 
-.site-navbar .site-navigation .site-menu .btn {
+.site-navbar .site-navigation .site-menu #get-appointment {
     display: inline-block;
-    width: auto;
+    width: 100%;
     background: #00a54f;
+    border: 2px solid #fff;
+    border-radius: 15px;
 }
 
 .form-inline {
@@ -81,9 +83,9 @@
 
 .site-navbar .site-navigation .site-menu>li>a {
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 1px;
     padding: 20px 0px;
-    color: #00a54f !important;
+    color: #212121 !important;
     display: inline-block;
     text-decoration: none !important;
 }
@@ -381,7 +383,7 @@
 
 .site-mobile-menu .site-nav-wrap>li>a {
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -396,7 +398,7 @@
 
 .site-mobile-menu .site-nav-wrap>li>ul>li>a {
     padding-left: 40px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul>li>ul {
@@ -468,6 +470,7 @@
     padding-right: 25px;
     margin-right: 50px;
     position: relative;
+    bottom: 12px;
 }
 
 .site-logo img {

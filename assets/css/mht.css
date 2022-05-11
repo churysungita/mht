@@ -172,6 +172,103 @@ a.border-button:hover {
 }
 
 
+/* ====scroll to top====== */
+
+
+/* The goods */
+
+.scrollDown {
+    width: 2rem;
+    height: 2rem;
+    background-color: purple;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: background-color 0.5s ease;
+    z-index: 6000;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transition: margin-bottom 0.2s;
+}
+
+.scrollDown:hover {
+    background-color: maroon;
+}
+
+.scrollDown:active {
+    margin-bottom: 1.5rem;
+}
+
+#dblArrowDown {
+    position: relative;
+    left: 31%;
+    vertical-align: bottom;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrolltop {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(10, 160, 18, 0.4);
+    border-radius: 50%;
+}
+
+.top-button {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: pointer;
+    padding: 12px;
+    color: #222;
+}
+
+
+/* ends */
+
+
+/* Styles for the content section */
+
+.content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+}
+
+@media (min-width: 500px) {
+    .content {
+        width: 43%;
+    }
+    #button {
+        margin: 30px;
+    }
+}
+
+.content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-style: italic;
+    color: #96a2a7;
+}
+
+
 /* Sub Header Style */
 
 .sub-header {
@@ -1184,13 +1281,23 @@ footer .contact-form button.filled-button:hover {
     color: #fff;
 }
 
-.page-heading h1 {
+.page-heading #headingCorner {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    max-width: auto;
+    text-align: center;
+}
+
+.page-heading p {
     text-transform: capitalize;
-    font-size: 46px;
+    font-size: 50px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
-    margin-bottom: 18px;
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    margin-top: 15px;
 }
 
 .page-heading span {
@@ -1229,6 +1336,43 @@ footer .contact-form button.filled-button:hover {
     text-align: center;
     float: left;
 }
+
+#our-mission {
+    padding-top: 120px;
+}
+
+#our-mission h3 {
+    color: #00a54f;
+    padding-top: 12px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#our-mission p {
+    padding-top: 12px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mental-projects {
+    padding: 160px 0;
+}
+
+#mental-projects h5 {
+    color: #03a7e5;
+    padding-bottom: 15px;
+}
+
+#mental-projects p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #00a54f;
+    padding-top: 10px;
+}
+
+
+/* -------end about section ====*/
 
 
 /* team */
@@ -1440,7 +1584,22 @@ footer .contact-form button.filled-button:hover {
         padding-bottom: 30px;
     }
     footer .last-item {
-        border-bottom: none;
+        background-color: #00BCD4;
+    }
+    footer .last-item {
+        /* visibility: visible;
+        display: inline-block;
+        width: 360px;
+        height: 100px;
+        padding: 0px;
+        border: none;
+        max-width: 100%;
+        min-width: 180px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-height: 200px; */
+        background-color: #00BCD4;
+        overflow: scroll;
     }
     .about-info .right-content {
         margin-right: 0px;
@@ -2189,7 +2348,320 @@ ul.social li a {
 }
 
 
-/* ===footer== */
+/* ===SERVICES O1-->06== /*/
+
+#service-item {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+#service-item .item-left {
+    padding-right: 60px;
+    padding-left: 10px;
+    background-color: #f6f6f6;
+}
+
+#service-item .item-left h4 {
+    color: #00a54f;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#service-item .item-left a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #94776b;
+    /* border-bottom: 1px solid #8f7676; */
+    top: 19px;
+}
+
+#service-item .item-left a:hover {
+    border-bottom: 1px solid #8f7676;
+    color: #00a54f;
+}
+
+#service-item .item-left p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #94776b;
+    top: 19px;
+    font-size: 18px;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
-/* ===footer== */
+/* contact-us */
+
+#contact-us-form {
+    padding-bottom: 50px;
+}
+
+#contact-us-form .controls {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+}
+
+#contact-us-form .controls .form-group {
+    padding: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#contact-us-form .controls .form-group #form_name {
+    padding: 10px;
+    background-color: #ddd;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-right: 50px;
+}
+
+#contact-us-form .controls .form-group #form_lastname {
+    padding: 10px;
+    background-color: #ddd;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-right: 50px;
+}
+
+#contact-us-form .controls .form-group #form_email {
+    padding: 10px;
+    background-color: #ddd;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-right: 50px;
+}
+
+#contact-us-form .controls .form-group #form_phone {
+    padding: 10px;
+    background-color: #ddd;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+#contact-us-form .controls .form-group #form_message {
+    padding: 10px;
+    background-color: #ddd;
+    align-items: center;
+    width: 100%;
+}
+
+#contact-us-form .controls .btn {
+    background-color: #00a54f;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+#contact-us-form .text-center h1 {
+    color: #00a54f;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center!important;
+    font-weight: 600;
+}
+
+#contact-us-form .text-center h6 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center!important;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+/* contact address */
+
+#contact-addresses #contact-contents {
+    background-color: #00a54f;
+    border-radius: 12px;
+    width: 100%;
+    margin-right: auto;
+    height: 100%;
+}
+
+#contact-addresses ul {
+    list-style: none;
+}
+
+#item-1 {
+    margin-top: 30px;
+}
+
+#item-1 ul li h2 {
+    color: white;
+    margin-top: -65px;
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+#item-1 ul li p {
+    color: white;
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+#empty-section {
+    padding-top: 500px;
+    background-color: #ddd;
+    margin-top: -140px;
+}
+
+#downloads .downloads-contents {
+    margin-top: 65px;
+    margin-bottom: 45px;
+    border: 3px solid #666666;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+
+/* =====get appointment section==== */
+
+#get-appointment .well-block {
+    background-color: #fff;
+    border: 1px solid #e9e6e8;
+    padding: 40px;
+}
+
+#get-appointment {
+    margin-bottom: 40px;
+}
+
+#get-appointment #body_header {
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#get-appointment #form {
+    max-width: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+#get-appointment h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #00a54f;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: auto;
+    outline: 0;
+    padding: 8px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: black;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+#get-appointment #form select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+#get-appointment #form button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+#get-appointment #form fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+#get-appointment #form legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+#get-appointment #form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#get-appointment #form label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+#get-appointment #form .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+
+#form {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
