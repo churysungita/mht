@@ -1288,9 +1288,18 @@ footer .contact-form button.filled-button:hover {
     text-align: center;
 }
 
+.page-heading #headingCorner h4 {
+    max-width: auto;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .page-heading p {
     text-transform: capitalize;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
@@ -2385,7 +2394,62 @@ ul.social li a {
     font-family: 'Times New Roman', Times, serif;
     color: #94776b;
     top: 19px;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+#service-item .item-right p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #94776b;
+    top: 19px;
+    font-size: 20px;
+}
+
+#service-item .item-right h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #00a54f;
+    top: 19px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#service-item .item-right h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #00a54f;
+    top: 19px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
+/* next row */
+
+#left-container {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #fff!important;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.text-block a {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #00a54f;
+    color: white;
+    padding-left: 45px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 3px;
+    font-size: 20px;
 }
 
 .btn:focus,
